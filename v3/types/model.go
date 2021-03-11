@@ -178,8 +178,8 @@ type TickerItem struct {
 	IsAnomaly       bool               `json:"is_anomaly"`
 	IsStale         bool               `json:"is_stale"`
 	CoinID          string             `json:"coin_id"`
-	BidAskSpreadPercentage float64 `json:"bid_ask_spread_percentage"`
-	TradeURL string `json:"trade_url"`
+	BidAskSpreadPercentage *float64 `json:"bid_ask_spread_percentage"`
+	TradeURL *string `json:"trade_url"`
 	TrustScore string `json:"trust_score"`
 }
 
